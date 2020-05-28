@@ -28,6 +28,7 @@ node {
 }
 
 // demoing a second agent
+// The 'mac' parameter is the name of the slave agent being called for this block
 node('mac') {
     // on windows use: bat 'dir'
     sh 'ls'
