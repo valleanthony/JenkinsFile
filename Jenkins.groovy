@@ -52,6 +52,8 @@ parallel chrome: {
     runTests("Safari")
 }
 
+
+//Custom function used to run browser tests in parallel
 def runTests(browser) {
     node {
         // on windows use: bat 'del /S /Q *'
