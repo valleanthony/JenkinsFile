@@ -73,6 +73,8 @@ node {
     notify("Deploy to staging?")
 }
 
+///never put a input inside of a node because it would lock it up. 
+//inputs run in flyweight executors 
 input 'Deploy to staging?'
 
 // limit concurrency so we don't perform simultaneous deploys
